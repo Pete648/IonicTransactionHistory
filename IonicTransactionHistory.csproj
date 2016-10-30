@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{09AB136B-49E5-4981-A694-EEA66C49C356}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>IonicTransactionHistory</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include=".gitignore" />
+    <None Include="ionic.config.json" />
+    <None Include="package.json" />
+    <None Include="src\app\app.scss" />
+    <None Include="src\manifest.json" />
+    <None Include="src\pages\transaction-history\transaction-history.scss" />
+    <None Include="src\pages\home\home.scss" />
+    <None Include="src\theme\variables.scss" />
+    <None Include="tsconfig.json" />
+    <None Include="tslint.json" />
+    <None Include="www\.gitkeep" />
+    <None Include="www\manifest.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\android\icon\drawable-hdpi-icon.png" />
+    <Content Include="resources\android\icon\drawable-ldpi-icon.png" />
+    <Content Include="resources\android\icon\drawable-mdpi-icon.png" />
+    <Content Include="resources\android\icon\drawable-xhdpi-icon.png" />
+    <Content Include="resources\android\icon\drawable-xxhdpi-icon.png" />
+    <Content Include="resources\android\icon\drawable-xxxhdpi-icon.png" />
+    <Content Include="resources\android\splash\drawable-land-hdpi-screen.png" />
+    <Content Include="resources\android\splash\drawable-land-ldpi-screen.png" />
+    <Content Include="resources\android\splash\drawable-land-mdpi-screen.png" />
+    <Content Include="resources\android\splash\drawable-land-xhdpi-screen.png" />
+    <Content Include="resources\android\splash\drawable-land-xxhdpi-screen.png" />
+    <Content Include="resources\android\splash\drawable-land-xxxhdpi-screen.png" />
+    <Content Include="resources\android\splash\drawable-port-hdpi-screen.png" />
+    <Content Include="resources\android\splash\drawable-port-ldpi-screen.png" />
+    <Content Include="resources\android\splash\drawable-port-mdpi-screen.png" />
+    <Content Include="resources\android\splash\drawable-port-xhdpi-screen.png" />
+    <Content Include="resources\android\splash\drawable-port-xxhdpi-screen.png" />
+    <Content Include="resources\android\splash\drawable-port-xxxhdpi-screen.png" />
+    <Content Include="resources\icon.png" />
+    <Content Include="resources\ios\icon\icon%402x.png" />
+    <Content Include="resources\ios\icon\icon-40%402x.png" />
+    <Content Include="resources\ios\icon\icon-40.png" />
+    <Content Include="resources\ios\icon\icon-50%402x.png" />
+    <Content Include="resources\ios\icon\icon-50.png" />
+    <Content Include="resources\ios\icon\icon-60%402x.png" />
+    <Content Include="resources\ios\icon\icon-60%403x.png" />
+    <Content Include="resources\ios\icon\icon-60.png" />
+    <Content Include="resources\ios\icon\icon-72%402x.png" />
+    <Content Include="resources\ios\icon\icon-72.png" />
+    <Content Include="resources\ios\icon\icon-76%402x.png" />
+    <Content Include="resources\ios\icon\icon-76.png" />
+    <Content Include="resources\ios\icon\icon-small%402x.png" />
+    <Content Include="resources\ios\icon\icon-small%403x.png" />
+    <Content Include="resources\ios\icon\icon-small.png" />
+    <Content Include="resources\ios\icon\icon.png" />
+    <Content Include="resources\ios\splash\Default%402x~iphone.png" />
+    <Content Include="resources\ios\splash\Default-568h%402x~iphone.png" />
+    <Content Include="resources\ios\splash\Default-667h.png" />
+    <Content Include="resources\ios\splash\Default-736h.png" />
+    <Content Include="resources\ios\splash\Default-Landscape%402x~ipad.png" />
+    <Content Include="resources\ios\splash\Default-Landscape-736h.png" />
+    <Content Include="resources\ios\splash\Default-Landscape~ipad.png" />
+    <Content Include="resources\ios\splash\Default-Portrait%402x~ipad.png" />
+    <Content Include="resources\ios\splash\Default-Portrait~ipad.png" />
+    <Content Include="resources\ios\splash\Default~iphone.png" />
+    <Content Include="resources\splash.png" />
+    <Content Include="src\assets\icon\favicon.ico" />
+    <Content Include="src\index.html" />
+    <Content Include="src\pages\transaction-history\transaction-history.html" />
+    <Content Include="src\pages\home\home.html" />
+    <Content Include="src\service-worker.js" />
+    <Content Include="www\service-worker.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\app.component.ts" />
+    <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\main.dev.ts" />
+    <TypeScriptCompile Include="src\app\main.prod.ts" />
+    <TypeScriptCompile Include="src\declarations.d.ts" />
+    <TypeScriptCompile Include="src\pages\transaction-history\transaction-history.ts" />
+    <TypeScriptCompile Include="src\pages\home\home.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
