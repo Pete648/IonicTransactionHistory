@@ -117,6 +117,9 @@
     <TypeScriptCompile Include="src\app\main.dev.ts" />
     <TypeScriptCompile Include="src\app\main.prod.ts" />
     <TypeScriptCompile Include="src\declarations.d.ts" />
+    <TypeScriptCompile Include="src\pages\transaction-history\jha.pipe.ts" />
+    <TypeScriptCompile Include="src\pages\transaction-history\message-wrapper.ts" />
+    <TypeScriptCompile Include="src\pages\transaction-history\toolbar.ts" />
     <TypeScriptCompile Include="src\pages\transaction-history\transaction-history.ts" />
     <TypeScriptCompile Include="src\pages\home\home.ts" />
   </ItemGroup>

@@ -4,11 +4,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TransactionHistory } from '../pages/transaction-history/transaction-history';
 
+import { JhaDateStringPipe, JhaMoneyPipe } from '../pages/transaction-history/jha.pipe';
+
 @NgModule({
   declarations: [
-    MyApp,
-      HomePage,
-    TransactionHistory
+	MyApp,
+	HomePage,
+	TransactionHistory,
+	JhaDateStringPipe,
+	JhaMoneyPipe
   ],
   imports: [
     IonicModule.forRoot(MyApp)

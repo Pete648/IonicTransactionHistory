@@ -1,3 +1,57 @@
-page-home {
+page-transaction-history {
 
+
+
+/*for zebra stripe in table*/
+.odd {
+//	 background-color: #f9f9f9;
+	 background-color: #e9e9e9;
+}
+
+/*table column styles*/
+
+.jha-table {
+	font-size: 1.1em;
+	font-family: Tahoma;
+	box-sizing:border-box;
+}
+
+.jha-detail-table {
+	font-size: .8em;
+}
+
+.jha-table-col-heading {
+	font-weight: bold;
+}
+
+.jha-left {
+	text-align: left;
+}
+
+.jha-left-bold {
+	text-align: left;
+	font-weight: bold;
+}
+
+.jha-right-bold {
+	text-align: right;
+	font-weight: bold;
+}
+
+.jha-text {
+	text-align: left;
+}
+
+.jha-date {
+	text-align: center;
+}
+
+.jha-money {
+	text-align: right;
+}
+
+.jha-comment {
+	text-align: left;
+	color: blue;
+}
 }
