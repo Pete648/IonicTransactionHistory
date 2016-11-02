@@ -1,15 +1,39 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Transaction History
-    </ion-title>
-  </ion-navbar>
+
+	<ion-toolbar no-border-bottom>
+		<ion-buttons start>
+			<button ion-button title="Show Inputs" (click)="view.showFilter = !view.showFilter">
+				<ion-icon name="glasses"></ion-icon>
+			</button>
+			<button ion-button title="Toggle Detail Mode" (click)="view.showDetail = !view.showDetail">
+				<ion-icon name="grid"></ion-icon>
+			</button>
+			<button ion-button title="Print">
+				<ion-icon name="print"></ion-icon>
+			</button>
+			<button ion-button title="E-mail Document">
+				<ion-icon name="mail"></ion-icon>
+			</button>
+		</ion-buttons>
+		<ion-title>Transaction History</ion-title>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content padding>
 	<ion-grid>
 		<ion-row responsive-md>
-			<ion-col width-25>
+			<ion-col width-25 *ngIf="view.showFilter">
+
+					<ion-toolbar no-border-bottom>
+						<ion-buttons left>
+							<button ion-button title="Advanced Search">
+								<ion-icon name="settings"></ion-icon>
+							</button>
+							<button ion-button title="Drafts Search" (click)="view.showDetail = !view.showDetail">
+								<ion-icon name="create"></ion-icon>
+							</button>
+						</ion-buttons>
+					</ion-toolbar>
 				<ion-list>
 
 					<ion-item>
@@ -37,7 +61,7 @@
 
 			<!--right side column-->
 
-			<ion-col width-75>
+			<ion-col [attr.width-75]="view.showFilter ? true : null">
 				
 				<!--<table class="table table-condensed table-hover jha-table">
 					<thead>
